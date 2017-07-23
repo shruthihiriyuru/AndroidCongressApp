@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/aboutmeAppBar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/aboutmeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkgray"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="About Me"
+            />
+    </android.support.design.widget.AppBarLayout>
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/aboutmeAppBar"
+        android:id="@+id/myPic"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mypic"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/myName"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/myPic"
+        android:text="Shruthi Hiriyuru"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:text="4239297402"
+        android:layout_below="@+id/myName"/>
+
+
+</RelativeLayout>

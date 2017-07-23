@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/row_gradient">
+
+    <ImageView android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:id="@+id/legPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/legText1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/legPhoto"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/legText2"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/legPhoto"
+        android:layout_below="@+id/legText1"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        />
+
+    <ImageView android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow1"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
